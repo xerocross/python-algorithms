@@ -7,7 +7,7 @@ def describe_given_an_array():
         
         test_array = [] 
         
-        def it_leaves_the_list_empty(array_sort_function):
+        def it_leaves_the_array_empty(array_sort_function):
             test_array_copy = test_array.copy()
             array_sort_function(test_array_copy)
             assert test_array_copy == []
@@ -75,7 +75,7 @@ def describe_given_an_array():
         
         test_array = [7, 7, 7, 7, 7, 7]
         
-        def it_leaves_the_list_the_same(array_sort_function):
+        def it_leaves_the_array_the_same(array_sort_function):
             test_array_copy = test_array.copy()
             array_sort_function(test_array_copy)
             assert test_array_copy == test_array
@@ -94,7 +94,7 @@ def describe_given_an_array():
         
         test_array = [-7, 12, -339187, 0, 15, -1992884]
         
-        def it_sorts_the_list(array_sort_function):
+        def it_sorts_the_array(array_sort_function):
             test_array_copy = test_array.copy()
             array_sort_function(test_array_copy)
             assert test_array_copy == [-1992884, -339187, -7, 0, 12, 15]
